@@ -12,6 +12,7 @@ const AddComment = () => {
   const { request } = useHttp();
 
   const AddComments = (e) => {
+    
     toast.success("Added successfully!");
     e.preventDefault();
     setComment(e.target.value);
