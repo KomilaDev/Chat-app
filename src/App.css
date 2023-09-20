@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------starting-styles---------- */
+
+body {
+  font-family: Rubik, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(223, 19%, 93%);
+}
+
+.user__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 800px;
+  min-height: 200px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.post {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  position: relative;
+  width: 687px;
+  min-height: 150px;
+}
+
+#user_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  width: 687px;
+  min-height: 80px;
+}
+
+.content {
+  line-height: 26px;
+  color: hsl(211, 10%, 45%);
+  font-size: 16px;
+}
+
+.username {
+  color: #000;
+  font-size: 16px;
+}
+
+.createdAt {
+  font-size: 16px;
+  margin-left: 40px;
+  color: hsl(211, 10%, 45%);
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.score {
+  width: 47px;
+  height: 124px;
+  padding: 40px 15px;
+  background-color: hsl(223, 19%, 93%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.plus {
+  width: 11px;
+  height: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minus {
+  width: 11px;
+  height: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rate {
+  margin-top: 5px;
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+}
+
+#userImg {
+  width: 47px;
+  height: 47px;
+}
+
+.reply {
+  color: hsl(238, 40%, 52%);
+  position: absolute;
+  right: 0px;
+  top: 0;
+  padding-left: 20px;
+  background-position: left center;
+  font-weight: bold;
+  background-image: url("./images/icon-reply.svg");
+  background-repeat: no-repeat;
+}
+
+.reply,
+.replying,
+#reply,
+#delete:hover {
+  cursor: pointer;
+}
+
+.replying {
+  color: hsl(238, 40%, 52%);
+  font-weight: bolder;
+}
+
+#user__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 600px;
+  min-height: 237px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.user_reply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 671px;
+  height: 220px;
+  border-left: 2px solid hsl(239, 57%, 85%);
+}
+
+#reply {
+  color: hsl(238, 40%, 52%);
+  padding-left: 20px;
+  margin-top: -30px;
+  background-position: left center;
+  font-weight: 500;
+  background-image: url("./images/icon-edit.svg");
+  background-repeat: no-repeat;
+}
+
+#delete {
+  color: hsl(358, 79%, 66%);
+  padding-left: 20px;
+  margin-top: -30px;
+  background-position: left center;
+  font-weight: 500;
+  background-image: url("./images/icon-delete.svg");
+  background-repeat: no-repeat;
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  width: 143px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.msg {
+  width: 581px;
+  height: 141px;
+  font-family: Rubik, sans-serif;
+  border: 1px solid hsl(223, 19%, 93%);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.AddForm {
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  min-height: 180px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.addImg {
+  width: 52px;
+  height: 52px;
+}
+
+.sendBtn {
+  margin-top: 20px;
+  padding: 0 30px;
+  font-family: Rubik, sans-serif;
+  height: 40px;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: hsl(238, 40%, 52%);
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+
+#you {
+  padding: 5px 6px;
+  background-color: #5457b6;
+  color: #fff;
+  position: absolute;
+  border-radius: 4px;
+  top: 23px;
+  font-family: Rubik, sans-serif;
+  left: 250px;
+}
+
+.you {
+  padding: 5px 6px;
+  background-color: #5457b6;
+  color: #fff;
+  position: absolute;
+  border-radius: 4px;
+  top: 13px;
+  font-family: Rubik, sans-serif;
+  left: 135px;
+}
